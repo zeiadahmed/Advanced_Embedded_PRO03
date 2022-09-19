@@ -12,8 +12,17 @@
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : com the chosen communication module
- *                    value the word to be transmitted
+ * \Parameters (in) :  
+ *              name: com    
+ *       description: the chosen communication module
+ *              type: Communication
+ *             range: 0 - 2
+ *                    
+ *              name: value    
+ *       description: the word to be transmitted
+ *              type: uint32
+ *             range: 0 - 65535
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -24,7 +33,12 @@ void Send_Message(Communication com , uint32 value);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : com the chosen communication module
+ * \Parameters (in) : 
+ *              name: com    
+ *       description: the chosen communication module
+ *              type: Communication
+ *             range: 0 - 2
+ * 
  * \Parameters (out): None
  * \Return value    : uint32 the word recieved on the communication module
  *****************************************************************/

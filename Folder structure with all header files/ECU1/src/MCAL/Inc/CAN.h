@@ -20,7 +20,13 @@ void Init_CAN(void);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : value the word to be written on CAN bus
+ * \Parameters (in) : 
+ * 
+ *              name: value    
+ *       description: the word to be written on CAN bus
+ *              type: uint32
+ *             range: 0 - 65535
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

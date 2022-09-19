@@ -10,7 +10,12 @@ extern uint32 currentSpeed;
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : currentSpeed the current car speed reading
+ * \Parameters (in) : 
+ *              name: currentSpeed    : 
+ *       description: current car speed reading
+ *              type: uint32
+ *             range: 0-500
+ *   
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

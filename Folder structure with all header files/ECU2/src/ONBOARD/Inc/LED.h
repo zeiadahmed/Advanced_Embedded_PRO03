@@ -6,8 +6,18 @@
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin LED pin number
- *                    port LED port number
+ * \Parameters (in) :  
+ * 
+ *              name: pin    
+ *       description: LED pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ * 
+ *                     
+ *              name: port    
+ *       description: LED port number
+ *              type: Port_Num
+ *             range: 0 - 8
  * \Parameters (out): None
  * \Return value    : uint32 LED id
  *****************************************************************/
@@ -18,7 +28,13 @@ uint32 Init_LED(Pin_Num pin , Port_Num port);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : LDE_ID the LED number
+ * \Parameters (in) : 
+ * 
+ *              name: LDE_ID    
+ *       description: the LED number
+ *              type: uint32
+ *             range: 0 - 5000
+ * 
  * \Parameters (out): None
  * \Return value    : None 
  *****************************************************************/
@@ -29,7 +45,13 @@ void LED_HIGH(uint32 LDE_ID);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : LDE_ID the LED number
+ * \Parameters (in) :  
+ * 
+ *              name: LDE_ID    
+ *       description: the LED number
+ *              type: uint32
+ *             range: 0 - 5000
+ * 
  * \Parameters (out): None
  * \Return value    : None 
  *****************************************************************/

@@ -6,8 +6,18 @@
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin Buzzer pin number
- *                    port Buzzer port number
+ * \Parameters (in) : 
+ * 
+ *              name: pin    
+ *       description: Buzzer pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ * 
+ *              name: port    
+ *       description: Buzzer port number
+ *              type: Port_Num
+ *             range: 0 - 8
+ * 
  * \Parameters (out): None
  * \Return value    : uint32 buzzer id
  *****************************************************************/
@@ -18,7 +28,13 @@ uint32 Init_Buzzer(Pin_Num pin , Port_Num port);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : buzzerID the buzzer number
+ * \Parameters (in) : 
+ * 
+ *              name: buzzerID    
+ *       description: the buzzer number
+ *              type: uint32
+ *             range: 0 - 5000
+ * 
  * \Parameters (out): None
  * \Return value    : None 
  *****************************************************************/
@@ -29,7 +45,13 @@ void Buzzer_HIGH(uint32 buzzerID);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : buzzerID the buzzer number
+ * \Parameters (in) : 
+ * 
+ *              name: buzzerID    
+ *       description: the buzzer number
+ *              type: uint32
+ *             range: 0 - 5000
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

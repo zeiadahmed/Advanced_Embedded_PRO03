@@ -13,8 +13,17 @@ extern uint8 currentSwitchState;
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : currentSwitchState the current switch state reading
- *                    Switch_ID the switch number 
+ * \Parameters (in) :          
+ *              name: currentSwitchState 
+ *       description: the current switch state reading
+ *              type: uint8
+ *             range: 0 or 1
+ * 
+ *              name: Switch_ID 
+ *       description: the switch number 
+ *              type: uin32
+ *             range: 0 or 5000
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -27,8 +36,17 @@ void Upload_Switch_State(uint8 currentSwitchState,uint32 Switch_ID);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin switch pin number
- *                    port switch port number
+ * \Parameters (in) : 
+ *              name: pin 
+ *       description: switch pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ *                   
+ *              name: port 
+ *       description: switch port number
+ *              type: Port_Num
+ *             range: 0 - 8
+ * 
  * \Parameters (out): None
  * \Return value    : Switch id
  *****************************************************************/

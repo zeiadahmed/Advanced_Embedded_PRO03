@@ -14,7 +14,12 @@ extern Door_State currentDoorState;
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : currentDoorState the current Door state reading
+ * \Parameters (in) : 
+ *              name: currentDoorState 
+ *       description: the current Door state reading
+ *              type: Door_State
+ *             range: 0 or 1
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

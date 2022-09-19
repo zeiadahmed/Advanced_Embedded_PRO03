@@ -8,7 +8,12 @@
  *                    based on the speed , switch and door readings
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : state the car global state variable
+ * \Parameters (in) : 
+ *              name: state    
+ *       description: the car global state variable
+ *              type: State
+ *             range: object with multiple attributes
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -20,7 +25,11 @@ void Update_Buzzer(State state);
  *                    based on the speed , switch and door readings
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : state the car global state variable
+ * \Parameters (in) : 
+ *              name: state    
+ *       description: the car global state variable
+ *              type: State
+ *             range: object with multiple attributes
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

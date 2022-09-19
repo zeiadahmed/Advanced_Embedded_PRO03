@@ -34,9 +34,23 @@ typedef enum{
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin the pin number
- *                    port the port number
- *                    mode the state of pin input or output
+ * \Parameters (in) :  
+ * 
+ *              name: pin    
+ *       description: the pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ * 
+ *              name: port    
+ *       description: the port number
+ *              type: Pin_Num
+ *             range: 0 - 8
+ *                     
+ *              name: mode    
+ *       description: the state of pin input or output
+ *              type: Mode
+ *             range: 0 - 1
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -50,9 +64,22 @@ void Set_Pin_Mode(Pin_Num pin , Port_Num port , Mode mode);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Level the value to be written in the channel
- *                    pin the pin number 
- *                    port the port number
+ * \Parameters (in) :  
+ *              name: Level    
+ *       description: the value to be written in the channel
+ *              type: uint8
+ *             range: 0 - 1
+ * 
+ *              name: pin    
+ *       description: the pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ * 
+ *              name: port    
+ *       description: the port number
+ *              type: Pin_Num
+ *             range: 0 - 8
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -65,8 +92,18 @@ void Write_Pin(Pin_Num pin , Port_Num port , uint8 value);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin the pin number
- *                    port the port number
+ * \Parameters (in) : 
+ * 
+ *              name: pin    
+ *       description: the pin number
+ *              type: Pin_Num
+ *             range: 0 - 32
+ * 
+ *              name: port    
+ *       description: the port number
+ *              type: Pin_Num
+ *             range: 0 - 8
+ * 
  * \Parameters (out): None
  * \Return value    : uint8 the value on pin
  *****************************************************************/
@@ -80,8 +117,17 @@ uint8 Read_Pin(Pin_Num pin , Port_Num port );
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : PortId the port number to write on
- *                    Level the value to write on the desired port
+ * \Parameters (in) :  
+ *                     
+ *              name: PortId    
+ *       description: the port number to write on
+ *              type: Port_Num
+ *             range: 0 - 8
+ * 
+ *              name: Level    
+ *       description: the value to write on the desired port
+ *              type: uint32
+ *             range: 0 - 65535
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -94,7 +140,13 @@ void Write_Port(Port_Num PortId, uint32 Level );
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : PortId the port id to read from
+ * \Parameters (in) : 
+ * 
+ *              name: PortId    
+ *       description: the port id to read from
+ *              type: Port_Num
+ *             range: 0 - 8
+ * 
  * \Parameters (out): None
  * \Return value    : uint32 the value on the chosen port
  *****************************************************************/

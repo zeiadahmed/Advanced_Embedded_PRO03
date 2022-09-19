@@ -15,7 +15,13 @@ typedef struct{
  *                    recieved on the CAN bus via the BCM from ECU1
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Current_Speed the current speed reading
+ * \Parameters (in) :  
+ * 
+ *              name: Current_Speed    
+ *       description: the current speed reading
+ *              type: uint32
+ *             range: 0-500
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -26,7 +32,12 @@ void Update_Speed(uint32 Current_Speed);
  *                    recieved on the CAN bus via the BCM from ECU1
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Door_State the current Door state
+ * \Parameters (in) :  
+ *              name: Door_State 
+ *       description: the current Door state
+ *              type: uint8
+ *             range: 0 or 1
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -39,7 +50,13 @@ void Update_Door_State(uint8 Door_State);
  *                    recieved on the CAN bus via the BCM from ECU1
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Switch_State the current switch state
+ * \Parameters (in) : 
+ *
+ *              name: Switch_State 
+ *       description: the current switch state
+ *              type: uint8
+ *             range: 0 or 1
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
